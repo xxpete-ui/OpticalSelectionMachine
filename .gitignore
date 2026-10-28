@@ -1,0 +1,62 @@
+# ============================================================
+#  OpticalSelectionMachine - Git 忽略规则
+#  原则：只提交源码、配置、文档、模型；不提交任何可再生的构建产物
+#        和体积巨大的第三方二进制库
+# ============================================================
+
+# ---------- 构建产物（约 2.5 GB） ----------
+build/
+ImageSeg/build/
+ImageSeg/debug/
+ImageSeg/release/
+ImageSeg/Makefile
+ImageSeg/Makefile.*
+ImageSeg/.qmake.stash
+ImageSeg/*.obj
+ImageSeg/*.pdb
+ImageSeg/*.ilk
+ImageSeg/*.exp
+ImageSeg/*.lib
+
+# qmake / uic / moc / rcc 的生成物（由 .pro 和 .ui 自动生成）
+ImageSeg/moc_*.cpp
+ImageSeg/moc_*.h
+ImageSeg/qrc_*.cpp
+ImageSeg/ui_*.h
+
+# ---------- IDE / 工程文件（由 gen_vs.py 可再生） ----------
+ImageSeg/.vs/
+ImageSeg/.qtcreator/
+ImageSeg/ImageSeg.vcxproj
+ImageSeg/ImageSeg.vcxproj.filters
+ImageSeg/ImageSeg.vcxproj.user
+ImageSeg/ImageSeg.sln
+*.pro.user
+*.pro.user.*
+*.suo
+*.user
+
+# ---------- 第三方 SDK 与二进制库（约 2.2 GB，按 README 自行下载） ----------
+dll/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---------- 运行时产生的临时数据 ----------
+ImageSeg/test_images/
+ImageSeg/out.log
+ImageSeg/err.log
+ImageSeg/run_stdout.log
+*.mp4
+
+# ---------- WorkBuddy 项目数据（不对外） ----------
+.workbuddy/
+
+# ---------- 系统 ----------
+Thumbs.db
+Desktop.ini
+.DS_Store

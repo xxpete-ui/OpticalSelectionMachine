@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BlowPortForm</class>
+ <widget class="QWidget" name="BlowPortForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>772</width>
+    <height>432</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: rgba(64, 64, 64, 255);
+	
+}
+
+QLabel{
+	background-color: rgba(47, 47, 47, 0);
+	font: 16pt &quot;Microsoft YaHei UI&quot;;
+}
+
+
+
+QToolButton {
+	color: rgb(255, 255, 255);
+	background-color: rgb(27, 16, 71);
+	border: none;
+	border-radius: 20px;
+	font: 14pt &quot;Microsoft YaHei UI&quot;;
+}
+
+QToolButton::menu-indicator { 
+	image: None;
+}
+
+QToolButton:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgba(43, 25, 113, 200);
+	border: none;
+	font: 12pt &quot;Microsoft YaHei UI&quot;;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>气阀测试</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true">QScrollBar{
+	
+	background-color: rgba(255, 255, 255, 30);
+}
+/* 垂直滚动条整体背景 */
+QScrollBar:vertical {
+     /* background: #2c2c2c;         背景色 */
+	background-color: rgba(64, 64, 64, 0);
+    width: 6px;                  /* 滚动条宽度 */
+    margin: 0px;
+    border-radius: 3px;           /* 整体圆角 */
+}
+
+/* 垂直滚动条的滑块 */
+QScrollBar::handle:vertical {
+    background: rgba(64, 64, 64, 150);          /* 滑块颜色 */
+    min-height: 20px;             /* 滑块最小高度 */
+    border-radius:3px;           /* 滑块圆角 */
+}
+
+/* 鼠标悬停时的滑块 */
+QScrollBar::handle:vertical:hover {
+    background: rgba(84, 84, 84, 150);          /* 悬停颜色 */
+}
+
+/* 滑块按下时的样式 */
+QScrollBar::handle:vertical:pressed {
+    background: #a0a0a0;
+}
+
+/* 去掉上下箭头按钮（如果需要） */
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+    border: none;
+    height: 0px;
+    width: 0px;
+}
+
+/* 去掉上下箭头按钮的占位空间 */
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/* 水平滚动条类似 */
+QScrollBar:horizontal {
+    background: rgba(64, 64, 64, 0);
+    height: 6px;
+    margin: 0px;
+    border-radius: 3px;
+}
+QScrollBar::handle:horizontal {
+    background: rgba(64, 64, 64, 150);
+    min-width: 20px;
+    border-radius: 3px;
+}
+QScrollBar::handle:horizontal:hover {
+    background:  rgba(84, 84, 84, 150);
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    height: 0px;
+    width: 0px;
+}</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>766</width>
+        <height>389</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

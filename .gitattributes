@@ -1,0 +1,33 @@
+# 统一换行符处理，避免 Windows/Linux 混合开发时的假 diff
+* text=auto
+
+# 源码强制 LF（Qt / MSVC 都能正确读取 LF 的源码）
+*.c      text eol=lf
+*.cpp    text eol=lf
+*.h      text eol=lf
+*.hpp    text eol=lf
+*.pro    text eol=lf
+*.pri    text eol=lf
+*.py     text eol=lf
+*.md     text eol=lf
+*.ui     text eol=lf
+*.qrc    text eol=lf
+.gitignore    text eol=lf
+.gitattributes text eol=lf
+
+# 批处理必须是 CRLF，否则 cmd 解析异常
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+
+# 二进制文件不做任何转换
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.bmp    binary
+*.ico    binary
+*.mp4    binary
+*.onnx   binary
+*.db     binary
+*.lib    binary
+*.dll    binary
+*.exe    binary

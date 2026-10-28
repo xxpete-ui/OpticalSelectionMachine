@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/back1.png</file>
+        <file>images/back2.png</file>
+        <file>images/home.png</file>
+        <file>images/Icon_max4.png</file>
+        <file>images/icon-close8.png</file>
+        <file>images/icon-copy.png</file>
+        <file>images/icon-minus3.png</file>
+        <file>images/setting2.png</file>
+        <file>images/tool_plugIn.png</file>
+        <file>images/tool2.png</file>
+        <file>images/logo1.png</file>
+        <file>images/code.png</file>
+        <file>images/img1.png</file>
+        <file>images/img2.png</file>
+    </qresource>
+</RCC>
